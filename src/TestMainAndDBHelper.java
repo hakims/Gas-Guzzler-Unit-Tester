@@ -51,7 +51,7 @@ public class TestMainAndDBHelper extends ActivityInstrumentationTestCase2<MainAc
 		
         assertTrue(dbHelper.getNumRows() == 1);
         assertTrue(dbHelper.getLastMileage() == 1000);
-        //assertTrue(dbHelper.getAveragePricePerGallon() == 4.43);
+        assertTrue(dbHelper.getAveragePricePerGallon() == 4.43);
         
 		dbHelper.insertData( 56, 12, 1600, "05-23-1221 31:23:02");
         
