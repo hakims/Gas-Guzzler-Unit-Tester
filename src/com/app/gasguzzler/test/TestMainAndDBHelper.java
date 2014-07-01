@@ -58,14 +58,16 @@ public class TestMainAndDBHelper extends ActivityInstrumentationTestCase2<MainAc
         assertTrue(dbHelper.getNumRows() == 1);
         assertTrue(dbHelper.getLastMileage() == 20000);
         assertTrue(dbHelper.getAveragePricePerGallon() == 3.79);
-        assertTrue(dbHelper.getAverageVolume() == 7.915);
+        assertTrue(dbHelper.getAverageVolume() == 7.92);
         
-		dbHelper.insertData( 4, 1, 20020, "05-23-1221 31:23:02");
+		
+        
+        dbHelper.insertData( 4, 1, 20020, "05-23-1221 31:23:02");
         
 		assertTrue(dbHelper.getNumRows() == 2);
 		assertTrue(dbHelper.getLastMileage() == 20020);
-		assertTrue(dbHelper.getAveragePricePerGallon() == 3.895);
-		assertTrue(dbHelper.getAverageVolume() == 4.4575);
+		assertTrue(dbHelper.getAveragePricePerGallon() == 3.90);
+		assertTrue(dbHelper.getAverageVolume() == 4.46);
 		assertTrue(dbHelper.getAverageMPGS() == 20);
 		
 		
@@ -74,16 +76,16 @@ public class TestMainAndDBHelper extends ActivityInstrumentationTestCase2<MainAc
 		assertTrue(dbHelper.getNumRows() == 3);
 		assertTrue(dbHelper.getLastMileage() == 20117.29);
 		assertTrue(dbHelper.getAveragePricePerGallon() == 3.83);
-		assertTrue(dbHelper.getAverageVolume() == 5.134);
+		assertTrue(dbHelper.getAverageVolume() == 5.13);
 		assertTrue(dbHelper.getAverageMPGS() == 17.5);
 		
 		dbHelper.insertData( 37.59, 10, 20417.29, "02-03-2001 31:23:02");
         
 		assertTrue(dbHelper.getNumRows() == 4);
 		assertTrue(dbHelper.getLastMileage() == 20417.29);
-		assertTrue(dbHelper.getAveragePricePerGallon() == 3.821);
+		assertTrue(dbHelper.getAveragePricePerGallon() == 3.82);
 		assertTrue(dbHelper.getAverageVolume() == 6.35);
-		assertTrue(dbHelper.getAverageMPGS() == 21.667);
+		assertTrue(dbHelper.getAverageMPGS() == 21.67);
 		
 		
 		
