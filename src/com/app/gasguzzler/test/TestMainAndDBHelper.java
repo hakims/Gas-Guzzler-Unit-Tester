@@ -83,10 +83,17 @@ public class TestMainAndDBHelper extends ActivityInstrumentationTestCase2<MainAc
         
 		assertTrue(dbHelper.getNumRows() == 4);
 		assertTrue(dbHelper.getLastMileage() == 20417.29);
-		assertTrue(dbHelper.getAveragePricePerGallon() == 3.82);
+		assertTrue(dbHelper.getAveragePricePerGallon() == 3.81);
 		assertTrue(dbHelper.getAverageVolume() == 6.35);
 		assertTrue(dbHelper.getAverageMPGS() == 21.67);
 		
+		dbHelper.insertData( 40, 10, 20617.29, "02-03-2001 31:23:02");
+        
+		assertTrue(dbHelper.getNumRows() == 5);
+		assertTrue(dbHelper.getLastMileage() == 20617.29);
+		assertTrue(dbHelper.getAveragePricePerGallon() == 3.85);
+		assertTrue(dbHelper.getAverageVolume() == 7.08);
+		assertTrue(dbHelper.getAverageMPGS() == 21.25);
 		
 		
 		
